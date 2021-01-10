@@ -110,8 +110,10 @@ function RegisterPage() {
       user.firstName &&
       user.lastName &&
       user.username &&
-      user.password &&
+      user.password && 
+      isValidPassword &&
       user.email &&
+      isValidEmail &&
       user.gender &&
       user.country
     ) {
