@@ -6,7 +6,6 @@ const initialState = user ? { loggedIn: true, user } : {};
 export function authentication(state = initialState, action) {
   switch (action.type) {
     case userConstants.LOGIN_REQUEST:
-      console.log(`user : ${JSON.stringify(user)}`);
       return {
         loggingIn: true,
         user: action.user,
